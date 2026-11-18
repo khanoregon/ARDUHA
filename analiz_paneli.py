@@ -226,7 +226,7 @@ def izleme_verisi_cek(liste):
     tickerlar = {}
     if kripto_semboller:
         try:
-            tickerlar = spot_borsa.fetch_tickers([x[1] for x in kripto_semboller])
+            tickerlar = spot_borsa.fetch_tickers()
         except Exception:
             tickerlar = {}
 
