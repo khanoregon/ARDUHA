@@ -103,7 +103,7 @@ if "izleme_listesi" not in st.session_state:
 
 @st.cache_resource
 def borsa_baglan():
-    spot = ccxt.binance({"enableRateLimit": True})
+    spot = ccxt.binance({"enableRateLimit": True, "urls": {"api": {"public": "https://binance.vision"}}})
     vadeli = ccxt.binance({"enableRateLimit": True, "options": {"defaultType": "future"}})
     return spot, vadeli
 
