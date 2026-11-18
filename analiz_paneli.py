@@ -104,7 +104,7 @@ if "izleme_listesi" not in st.session_state:
 @st.cache_resource
 def borsa_baglan():
     spot = ccxt.gate({"enableRateLimit": True})
-vadeli = ccxt.gate({"enableRateLimit": True, "options": {"defaultType": "swap"}})
+    vadeli = ccxt.gate({"enableRateLimit": True, "options": {"defaultType": "swap"}})
     return spot, vadeli
 
 spot_borsa, vadeli_borsa = borsa_baglan()
