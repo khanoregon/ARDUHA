@@ -2,8 +2,7 @@ streamlit
 ccxt
 pandas
 numpy
-pandas_ta
+pandas-ta-classic
 plotly
 yfinance
 feedparser
-scipy
